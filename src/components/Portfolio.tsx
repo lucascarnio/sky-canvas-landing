@@ -115,18 +115,19 @@ const Portfolio = () => {
 
       {/* Image Modal */}
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-7xl p-0 bg-transparent border-0">
+        <DialogContent className="max-w-5xl max-h-[90vh] p-4 bg-background/95 backdrop-blur border border-border">
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute -top-12 right-0 text-white hover:text-primary transition-colors"
+            className="absolute top-4 right-4 z-50 text-foreground hover:text-primary transition-colors bg-background/80 rounded-full p-2"
+            aria-label="Fechar"
           >
-            <X size={32} />
+            <X size={24} />
           </button>
           {selectedImage && (
             <img
               src={selectedImage}
               alt="Portfolio item"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto max-h-[85vh] object-contain rounded-lg"
             />
           )}
         </DialogContent>

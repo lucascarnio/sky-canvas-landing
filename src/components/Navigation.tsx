@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +18,7 @@ const Navigation = () => {
     { name: "Serviços", href: "#servicos" },
     { name: "Portfólio", href: "#portfolio" },
     { name: "Planos", href: "#planos" },
+    { name: "Contato", href: "#contato" },
   ];
 
   return (
@@ -47,15 +47,6 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button asChild variant="default" className="shadow-glow">
-              <a
-                href="https://wa.me/5511999999999"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,15 +71,6 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button asChild variant="default" className="w-full shadow-glow">
-              <a
-                href="https://wa.me/5511999999999"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </Button>
           </div>
         )}
       </div>
