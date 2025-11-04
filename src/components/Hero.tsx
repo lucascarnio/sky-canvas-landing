@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import heroImage from "@/assets/hero-city-sunset.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover"
         poster={heroImage}
       >
-        <source src="/your-drone-video.mp4" type="video/mp4" />
+        <source src={heroVideo} type="video/mp4" />
       </video>
 
       {/* Fallback Image if video doesn't load */}
