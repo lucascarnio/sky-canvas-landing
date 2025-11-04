@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  base: "/sky-canvas-landing/docs/", // nome do repositório no GitHub
+  base: "/sky-canvas-landing/", // nome do repositório no GitHub
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
