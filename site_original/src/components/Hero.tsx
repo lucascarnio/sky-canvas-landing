@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-city-sunset.jpg";
+import heroImage from "@/assets/hero-video.mp4";
 import heroVideo from "@/assets/hero-video.mp4";
 
 const Hero = () => {
@@ -25,7 +25,7 @@ const Hero = () => {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/01 via-background/02 to-background" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
